@@ -1,0 +1,30 @@
+@import '../../styles/variables.sass'
+
+.burger
+	cursor: pointer
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	width: 24px
+	height: 24px
+	overflow: hidden
+	span
+		display: block
+		height: 2px
+		width: 18px
+		border-radius: 2px
+		background-color: $black
+		transition: all .15s ease-out
+		&:nth-child(2)
+			margin: 5px 0
+	&.open
+		background-color: $yellow
+		span
+			&:nth-child(2)
+				transform: translateX(-100px)
+			&:first-of-type
+				transform: rotate(45deg) translate(5px, 5px) 
+			&:last-child
+				transform: rotate(-45deg) translate(5px,-5px)

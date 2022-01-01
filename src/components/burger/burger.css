@@ -1,0 +1,54 @@
+.burger {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 18px;
+  border-radius: 2px;
+  background-color: #091C2C;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.burger span:nth-child(2) {
+  margin: 5px 0;
+}
+
+.burger.open {
+  background-color: #FFD102;
+}
+
+.burger.open span:nth-child(2) {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.burger.open span:first-of-type {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open span:last-child {
+  -webkit-transform: rotate(-45deg) translate(5px, -5px);
+          transform: rotate(-45deg) translate(5px, -5px);
+}
+/*# sourceMappingURL=burger.css.map */

@@ -1,0 +1,52 @@
+@import '../../styles/variables.sass'
+
+.menu
+	&-container
+		display: flex
+		align-items: center
+		gap: 40px
+	&-link
+		position: relative
+		display: inline-block
+		font-weight: bold
+		&::before
+			display: block
+			width: 100%
+			height: 4px
+			content: ''
+			position: absolute
+			bottom: -14px
+			left: 0
+			transition: all .35s
+		&-name
+			display: inline-block
+			line-height: 24px
+			vertical-align: middle
+			transition: all .35s
+			color: $darkgray
+		.icon
+			margin-right: 10px
+			vertical-align: middle
+			.yellow
+				transition: all .35s
+		&:hover
+			.menu-link
+				&-name
+					color: $darkyellow
+			.icon
+				.yellow
+					fill: $darkyellow
+		&.active
+			pointer-events: none
+			&::before
+				background-color: $yellow
+			.icon
+				.yellow
+					fill: $yellow
+			.menu-link-name
+				color: $black
+	
+@media (max-width: $bigTablet)
+	.menu
+		&-container
+			gap: 30px

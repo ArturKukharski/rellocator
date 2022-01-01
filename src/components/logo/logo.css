@@ -1,0 +1,32 @@
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.logo-name {
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.logo-dot {
+  color: #FFD102;
+}
+
+.logo:hover .logo-name {
+  color: #EEC81B;
+}
+
+@media (max-width: 1024px) {
+  .logo-name {
+    display: none;
+  }
+}
+/*# sourceMappingURL=logo.css.map */

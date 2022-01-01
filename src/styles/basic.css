@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #091C2C;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+body {
+  background-color: #F6F6F6;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=basic.css.map */

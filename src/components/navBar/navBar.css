@@ -1,0 +1,77 @@
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.menu-link {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.menu-link::before {
+  display: block;
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.menu-link-name {
+  display: inline-block;
+  line-height: 24px;
+  vertical-align: middle;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  color: #768088;
+}
+
+.menu-link .icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.menu-link .icon .yellow {
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.menu-link:hover .menu-link-name {
+  color: #EEC81B;
+}
+
+.menu-link:hover .icon .yellow {
+  fill: #EEC81B;
+}
+
+.menu-link.active {
+  pointer-events: none;
+}
+
+.menu-link.active::before {
+  background-color: #FFD102;
+}
+
+.menu-link.active .icon .yellow {
+  fill: #FFD102;
+}
+
+.menu-link.active .menu-link-name {
+  color: #091C2C;
+}
+
+@media (max-width: 1024px) {
+  .menu-container {
+    gap: 30px;
+  }
+}
+/*# sourceMappingURL=navBar.css.map */
